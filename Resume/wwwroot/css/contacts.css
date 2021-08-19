@@ -1,0 +1,19 @@
+.contacts {
+  padding: 4px 0 10px 23px;
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #6D6D6D;
+}
+.contacts__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.contacts__item i {
+  padding-right: 16px;
+}
+.contacts__item span {
+  padding-bottom: 4px;
+}

@@ -1,0 +1,20 @@
+﻿@if (About?.Any() == true)
+{
+    <div class="person__info_item about_me">
+        <h2 class="person__info_title">
+            <i class="flaticon-info-button"></i>
+            About me
+        </h2>
+        <div class="person__info_content">
+            @foreach (var str in About)
+            {
+                <p>@str</p>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<string> About { get; set; }
+}

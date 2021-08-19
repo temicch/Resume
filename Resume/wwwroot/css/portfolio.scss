@@ -1,0 +1,38 @@
+.portfolio {
+    &__item {
+        padding-bottom: 12px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: none;
+        font-size: 16px;
+    }
+
+    &__title {
+        text-decoration: none;
+
+        h3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:hover {
+            .portfolio__link {
+                display: inline;
+            }
+        }
+    }
+
+    &__description {
+        margin: 6px;
+    }
+
+    &__icon {
+        width: 26px;
+        height: 26px;
+    }
+}

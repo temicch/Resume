@@ -1,0 +1,27 @@
+.portfolio__item {
+  padding-bottom: 12px;
+}
+.portfolio__item:last-child {
+  padding-bottom: 0;
+}
+.portfolio__link {
+  display: none;
+  font-size: 16px;
+}
+.portfolio__title {
+  text-decoration: none;
+}
+.portfolio__title h3 {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio__title:hover .portfolio__link {
+  display: inline;
+}
+.portfolio__description {
+  margin: 6px;
+}
+.portfolio__icon {
+  width: 26px;
+  height: 26px;
+}

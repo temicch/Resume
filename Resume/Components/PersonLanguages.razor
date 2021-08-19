@@ -1,0 +1,26 @@
+﻿@if (Languages?.Any() == true)
+{
+    <div class="person__info_item languages">
+        <h2 class="person__info_title">
+            <i class="flaticon-language"></i>
+            LANGUAGES
+        </h2>
+        <div class="person__info_content">
+            @foreach (var language in Languages)
+            {
+                <div class="languages__item">
+                    <object class="languages__icon" type="image/svg+xml" data="@language?.SvgFilePath" />
+                    <div class="languages_wrapper">
+                        <h3 class="languages__title">@language?.Title</h3>
+                        <span class="languages__content">@language?.Level</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<Language> Languages { get; set; }
+}

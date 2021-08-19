@@ -1,0 +1,38 @@
+﻿@if (Person != null)
+{
+    <div class="person">
+        <img class="person__image fade-in-bottom" src="@Person.AvatarUrl" alt="Photo" />
+        <h1 class="person__name">@Person.FullName</h1>
+        <span class="person__position">@Person.Position</span>
+        <div class="contacts">
+            <p class="contacts__item">
+                <i class="flaticon-pin"></i><span>@Person.Location</span>
+            </p>
+            <p class="contacts__item">
+                <i class="flaticon-email"></i>
+                <span>
+                    <a href="mailto:@Person.Email">@Person.Email</a>
+                </span>
+            </p>
+            <p class="contacts__item">
+                <i class="flaticon-calendar"></i><span>@Person.BirthDay.ToString("dd'/'MM'/'yyyy")</span>
+            </p>
+        </div>
+        <div class="person__badges">
+            @if (Person.Contacts?.Any() == true)
+            {
+                @foreach (var item in Person.Contacts)
+                {
+                    <a href="@item.Link" class="@item.LinkClasses" target="_blank" title="@item.Title">
+                        <i class="@item.IconClasses"></i>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Person Person { get; set; }
+}

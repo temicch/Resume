@@ -1,0 +1,39 @@
+﻿@* <div class="person__info_item portfolio">
+    <h2 class="person__info_title">
+    <i class="flaticon-agenda"></i>
+    Portfolio
+    </h2>
+    <div class="person__info_content">
+    <h3 class="education__qualification">Contacts Book</h3>
+    <p class="education__institution">.NET 5 and Vue.js web application for composing user contacts</p>
+    </div>
+    </div> *@
+
+@if (Portfolio?.Any() == true)
+{
+    <div class="person__info_item portfolio">
+        <h2 class="person__info_title">
+            <i class="flaticon-agenda"></i>
+            Portfolio
+        </h2>
+        <div class="person__info_content">
+            @foreach (var portfolioItem in Portfolio)
+            {
+                <div class="portfolio__item">
+                    <a href="@portfolioItem.Link" target="_blank" class="portfolio__title">
+                        <h3>
+                            @portfolioItem.Title
+                            <i class="flaticon-foreign portfolio__link"></i>
+                        </h3>
+                    </a>
+                    <p class="portfolio__description">@portfolioItem.Description</p>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<PortfolioItem> Portfolio { get; set; }
+}

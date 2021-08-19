@@ -1,0 +1,25 @@
+﻿@if (HardSkills?.Any() == true)
+{
+    <div class="person__info_item">
+        <h2 class="person__info_title">
+            <i class="flaticon-skills"></i>
+            Technical skills
+        </h2>
+        <div class="person__info_content">
+            @foreach (var tagsGroup in HardSkills)
+            {
+                <div class=" tags">
+                    @foreach (var tag in tagsGroup)
+                    {
+                        <span class="tags__item">@tag.Name</span>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<List<HardSkill>> HardSkills { get; set; }
+}

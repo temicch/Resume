@@ -1,0 +1,62 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person__image {
+  width: 230px;
+  height: 241px;
+  border: white 5px solid;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.person__name {
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+.person__position {
+  padding-bottom: 8px;
+  color: #6D6D6D;
+}
+.person__badges {
+  display: flex;
+  justify-content: space-between;
+}
+.person__badges a {
+  padding: 5px;
+  font-size: 34px;
+  text-decoration: none;
+}
+.person__badges a {
+  transition: all 0.3s ease-in-out;
+}
+.person__badges a:hover {
+  opacity: 0.5;
+}
+.person__description {
+  color: var(primary_color);
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0;
+}
+.person__description span {
+  color: black;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 500;
+}
+.person__info_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.person__info_title i {
+  font-size: 24px;
+  padding-right: 20px;
+}
+.person__info_content {
+  padding-left: 20px;
+}
+.person__info_item {
+  padding-bottom: 8px;
+}

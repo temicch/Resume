@@ -1,0 +1,97 @@
+{
+  "FullName": "Artyom Maksimov",
+  "AvatarUrl": "images/avatar.jpg",
+  "BirthDay": "1995-11-03T00:00:00",
+  "Position": "Fullstack .Net Developer",
+  "Location": "Russia, Novosibirsk",
+  "Email": "maksimov-artem@mail.ru",
+  "Portfolio": [
+    {
+      "Title": "\uD83D\uDCD6 Contacts Book",
+      "Description": ".NET 5 and Vue.js web application for composing user contacts",
+      "Link": "https://github.com/temicch/ContactsBook"
+    },
+    {
+      "Title": "\uD83C\uDFAE AO_AddonMaker",
+      "Description": "WPF application for viewing addon files of the game \u0022Allods Online\u0022",
+      "Link": "https://github.com/temicch/AO_AddonMaker"
+    },
+    {
+      "Title": "\uD83D\uDCC4 Resume",
+      "Description": "Blazor client-side web application for my resume (which you are looking at right now \uD83D\uDC40)",
+      "Link": "https://github.com/temicch/Resume"
+    }
+  ],
+  "Contacts": [
+    {
+      "Title": "Github profile",
+      "Link": "https://github.com/temicch",
+      "LinkClasses": "icon_github",
+      "IconClasses": "flaticon-github"
+    },
+    {
+      "Title": "LinkedIn profile",
+      "Link": "https://www.linkedin.com/in/temicch/",
+      "LinkClasses": "icon_linkedin",
+      "IconClasses": "flaticon-linkedin"
+    },
+    {
+      "Title": "Telegram profile",
+      "Link": "https://t.me/temicch",
+      "LinkClasses": "icon_telegram",
+      "IconClasses": "flaticon-telegram"
+    }
+  ],
+  "EducationList": [
+    {
+      "Institution": "Siberian State University of Telecommunications and Informatics - Russia, Novosibirsk",
+      "Qualification": "Bachelor of Informatics and Computer Science",
+      "YearOfStart": "2014-01-01T00:00:00",
+      "YearOfEnd": "2018-01-01T00:00:00"
+    }
+  ],
+  "HardSkillsGroups": [
+    [
+      { "Name": "C#" },
+      { "Name": ".NET Framework" },
+      { "Name": ".NET Core" },
+      { "Name": "Asp.Net Core" },
+      { "Name": "Asp.Net Web Forms" },
+      { "Name": "Entity Framework Core" },
+      { "Name": "ADO.NET" },
+      { "Name": "Dapper" },
+      { "Name": "MSSQL" },
+      { "Name": "OOP" },
+      { "Name": "SOLID" },
+      { "Name": "CQRS" }
+    ],
+    [
+      { "Name": "HTML" },
+      { "Name": "SASS" },
+      { "Name": "CSS" },
+      { "Name": "JS" },
+      { "Name": "Typescript" },
+      { "Name": "Vue" },
+      { "Name": "Git" },
+      { "Name": "TDD" },
+      { "Name": "CI / CD" }
+    ]
+  ],
+  "Languages": [
+    {
+      "Title": "English",
+      "Level": "B1 - Intermediate",
+      "SvgFilePath": "images/eng.svg"
+    },
+    {
+      "Title": "Russian",
+      "Level": "Native speaker",
+      "SvgFilePath": "images/ru.svg"
+    }
+  ],
+  "About": [
+    "I am a \u26A1 full-stack web developer with half a year experience. I love making \uD83C\uDFA8 beautiful and \uD83C\uDF89 interactive websites.",
+    "I have experience in development using \uD83D\uDCA5 Vue 2.",
+    "I prefer \u2764\uFE0F Asp.Net Core as a backend. And I love to learn new things \uD83D\uDCDA"
+  ]
+}

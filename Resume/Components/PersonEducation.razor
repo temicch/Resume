@@ -1,0 +1,27 @@
+@if (EducationList?.Any() == true)
+{
+    <div class="person__info_item education">
+        <h2 class="person__info_title">
+            <i class="flaticon-graduation-hat"></i>
+            Education
+        </h2>
+        <div class="person__info_content">
+            @foreach (var education in EducationList)
+            {
+                <div class="education__wrapper">
+                    <h3 class="education__qualification">@education.Qualification</h3>
+                    <p class="education__institution">
+                        @education.Institution
+                    </p>
+                    <span class="education__years">(@education.YearOfStart.Year - @education.YearOfEnd.Year)</span>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<Education> EducationList { get; set; }
+
+}
