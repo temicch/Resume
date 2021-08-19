@@ -1,0 +1,14 @@
+.education__wrapper {
+  padding-bottom: 12px;
+}
+.education__wrapper:last-child {
+  padding-bottom: 0;
+}
+.education__institution {
+  margin: 6px;
+  opacity: 0.9;
+}
+.education__years {
+  color: #6d6d6d;
+  font-size: 14px;
+}

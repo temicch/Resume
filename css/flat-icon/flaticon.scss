@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?4c52e063a4e883e3cb2a739e73088606") format("truetype"),
-url("./flaticon.woff?4c52e063a4e883e3cb2a739e73088606") format("woff"),
-url("./flaticon.woff2?4c52e063a4e883e3cb2a739e73088606") format("woff2"),
-url("./flaticon.eot?4c52e063a4e883e3cb2a739e73088606#iefix") format("embedded-opentype"),
-url("./flaticon.svg?4c52e063a4e883e3cb2a739e73088606#flaticon") format("svg");
+    src: url("./flaticon.ttf?d5be21fa7e3676071b362cf865ac06ad") format("truetype"),
+url("./flaticon.woff?d5be21fa7e3676071b362cf865ac06ad") format("woff"),
+url("./flaticon.woff2?d5be21fa7e3676071b362cf865ac06ad") format("woff2"),
+url("./flaticon.eot?d5be21fa7e3676071b362cf865ac06ad#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d5be21fa7e3676071b362cf865ac06ad#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -35,6 +35,7 @@ $flaticon-map: (
     "email": "\f10c",
     "calendar": "\f10d",
     "agenda": "\f10e",
+    "foreign": "\f10f",
 );
 
 .flaticon-viber:before {
@@ -78,4 +79,7 @@ $flaticon-map: (
 }
 .flaticon-agenda:before {
     content: map-get($flaticon-map, "agenda");
+}
+.flaticon-foreign:before {
+    content: map-get($flaticon-map, "foreign");
 }

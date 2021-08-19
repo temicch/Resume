@@ -1,0 +1,23 @@
+.contacts {
+    padding: 4px 0 10px 23px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #6D6D6D;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        i {
+            padding-right: 16px;
+        }
+
+        span {
+            padding-bottom: 4px;
+        }
+    }
+}
