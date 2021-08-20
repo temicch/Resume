@@ -8,12 +8,13 @@
     }
 
     &__institution {
-        margin: 6px;
+        margin: 0;
+        padding: 6px 0 2px;
         opacity: 0.9;
     }
 
     &__years {
         color: #6d6d6d;
-        font-size: 14px;
+        font-size: 10px;
     }
 }
