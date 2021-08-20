@@ -1,6 +1,6 @@
 .fade-in-bottom {
-  -webkit-animation: fade-in-bottom 0.6s both;
-  animation: fade-in-bottom 0.6s both;
+  -webkit-animation: fade-in-bottom 2s both;
+  animation: fade-in-bottom 2s both;
 }
 
 @-webkit-keyframes fade-in-bottom {
