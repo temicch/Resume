@@ -73,8 +73,7 @@
       { "Name": "Typescript" },
       { "Name": "Vue" },
       { "Name": "Git" },
-      { "Name": "TDD" },
-      { "Name": "CI / CD" }
+      { "Name": "TDD" }
     ]
   ],
   "Languages": [
