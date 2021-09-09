@@ -16,7 +16,7 @@
 }
 .person__position {
   padding-bottom: 8px;
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 .person__badges {
   display: flex;
@@ -34,7 +34,7 @@
   opacity: 0.5;
 }
 .person__description {
-  color: var(primary_color);
+  color: var(--primary_color);
   font-size: 1.17em;
   font-weight: bold;
   margin: 0;

@@ -1,20 +1,20 @@
 .education {
-    &__wrapper {
-        padding-bottom: 12px;
+  &__wrapper {
+    padding-bottom: 12px;
 
-        &:last-child {
-            padding-bottom: 0;
-        }
+    &:last-child {
+      padding-bottom: 0;
     }
+  }
 
-    &__institution {
-        margin: 0;
-        padding: 6px 0 2px;
-        opacity: 0.9;
-    }
+  &__institution {
+    margin: 0;
+    padding: 6px 0 2px;
+    opacity: 0.9;
+  }
 
-    &__years {
-        color: #6d6d6d;
-        font-size: 10px;
-    }
+  &__years {
+    color: #6d6d6d;
+    font-size: 10px;
+  }
 }
