@@ -10,7 +10,8 @@
 @import "person.css";
 @import "portfolio.css";
 :root {
-  --primary_color: #2abffa;
+  --primary_color: rgb(42, 191, 250);
+  --primary_color_rgb: 42, 191, 250;
 }
 
 html,
@@ -81,12 +82,20 @@ h3 {
   margin: 0;
 }
 .tags__item {
-  background-color: rgba(42, 191, 250, 0.6);
+  background-color: rgba(var(--primary_color_rgb), 0.6);
   color: white;
+  border: 1px solid transparent;
   border-radius: 8px;
   padding: 8px;
   margin: 2px 4px;
   font-weight: 500;
+  transition: 0.2s;
+}
+.tags__item:hover {
+  cursor: pointer;
+  border: 1px solid rgba(var(--primary_color_rgb), 0.6);
+  background-color: white;
+  color: rgba(var(--primary_color_rgb), 0.6);
 }
 
 @media (max-width: 768px) {

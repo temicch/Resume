@@ -1,11 +1,18 @@
 .contacts {
   padding: 5px 0;
 }
+.contacts__email {
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+.contacts__email:hover {
+  border-bottom: 1px solid rgba(109, 109, 109, 0.6);
+}
 .contacts__item {
   display: flex;
   align-items: center;
   margin: 0;
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 .contacts__item a {
   text-decoration: none;

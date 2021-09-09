@@ -1,23 +1,33 @@
 .contacts {
-    padding: 5px 0;
+  padding: 5px 0;
 
-    &__item {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        color: #6D6D6D;
+  &__email {
+    border-bottom: 1px solid transparent;
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+    transition: 0.2s;
 
-        i {
-            padding-right: 16px;
-        }
-
-        span {
-            padding-bottom: 4px;
-        }
+    &:hover {
+      border-bottom: 1px solid rgba($color: #6d6d6d, $alpha: 0.6);
     }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #6d6d6d;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    i {
+      padding-right: 16px;
+    }
+
+    span {
+      padding-bottom: 4px;
+    }
+  }
 }

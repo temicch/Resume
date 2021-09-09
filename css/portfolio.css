@@ -4,18 +4,22 @@
 .portfolio__item:last-child {
   padding-bottom: 0;
 }
-.portfolio__link {
-  display: none;
-  font-size: 12px;
-}
 .portfolio__title {
   text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.2s;
+}
+.portfolio__title:hover {
+  background-color: rgba(var(--primary_color_rgb), 0.6);
+  border: 1px solid rgba(var(--primary_color_rgb), 0.3);
+}
+.portfolio__title:hover h3 {
+  color: white;
+  font-weight: 500;
 }
 .portfolio__title h3 {
-  display: flex;
-  justify-content: space-between;
-}
-.portfolio__title:hover .portfolio__link {
   display: inline;
 }
 .portfolio__description {
