@@ -12,6 +12,11 @@
       "Link": "https://github.com/temicch/ContactsBook"
     },
     {
+      "Title": "\uD83D\uDD17 URL Shortener",
+      "Description": "Web app for URL shortening using ASP.NET Core Blazor",
+      "Link": "https://github.com/temicch/UrlShortener"
+    },
+    {
       "Title": "\uD83C\uDFAE AO_AddonMaker",
       "Description": "WPF application for viewing addon files of the game \u0022Allods Online\u0022",
       "Link": "https://github.com/temicch/AO_AddonMaker"
