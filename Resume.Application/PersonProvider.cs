@@ -1,26 +1,23 @@
 ﻿using Resume.Application.Interfaces;
 using Resume.Domain;
-using System.Net.Http;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
 
-namespace Resume.Application
+namespace Resume.Application;
+
+public class PersonProvider : IPersonProvider
 {
-    public class PersonProvider : IPersonProvider
+    private readonly HttpClient _httpClient;
+    private readonly string _personFilePath;
+
+    public PersonProvider(HttpClient httpClient, string filePath)
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _personFilePath;
+        _httpClient = httpClient;
+        _personFilePath = filePath;
+    }
 
-        public PersonProvider(HttpClient httpClient, string filePath)
-        {
-            _httpClient = httpClient;
-            _personFilePath = filePath;
-        }
-
-        public async Task<Person> GetAsync()
-        {
-            var person = await _httpClient.GetFromJsonAsync<Person>(_personFilePath);
-            return person;
-        }
+    public async Task<Person?> GetAsync(CancellationToken cancellationToken = default)
+    {
+        var person = await _httpClient.GetFromJsonAsync<Person>(_personFilePath, cancellationToken);
+        return person;
     }
 }

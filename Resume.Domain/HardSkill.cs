@@ -1,12 +1,11 @@
-﻿namespace Resume.Domain
-{
-    public class HardSkill
-    {
-        public HardSkill(string name)
-        {
-            Name = name;
-        }
+﻿namespace Resume.Domain;
 
-        public string Name { get; set; }
+public class HardSkill
+{
+    public HardSkill(string name)
+    {
+        Name = name;
     }
+
+    public string Name { get; set; }
 }

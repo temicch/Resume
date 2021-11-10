@@ -1,10 +1,8 @@
 ﻿using Resume.Domain;
-using System.Threading.Tasks;
 
-namespace Resume.Application.Interfaces
+namespace Resume.Application.Interfaces;
+
+public interface IPersonProvider
 {
-    public interface IPersonProvider
-    {
-        public Task<Person> GetAsync();
-    }
+    public Task<Person?> GetAsync(CancellationToken cancellationToken = default);
 }

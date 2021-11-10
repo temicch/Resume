@@ -15,7 +15,7 @@
                 </span>
             </p>
             <p class="contacts__item">
-                <i class="flaticon-calendar"></i><span>@Person.BirthDay.ToString("dd'/'MM'/'yyyy")</span>
+                <i class="flaticon-calendar"></i><span>@Person.BirthDay?.ToString("dd'/'MM'/'yyyy")</span>
             </p>
         </div>
         <div class="person__badges">
@@ -34,5 +34,5 @@
 
 @code {
     [Parameter]
-    public Person Person { get; set; }
+    public Person? Person { get; set; }
 }
